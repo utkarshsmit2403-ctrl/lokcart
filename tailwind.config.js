@@ -1,0 +1,125 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ["class"],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    screens: {
+      xs: "480px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
+    extend: {
+      borderRadius: {
+        none: "0px",
+        xs: "4px",
+        sm: "6px",
+        md: "8px",
+        lg: "10px",
+        xl: "12px",
+        "2xl": "20px",
+        full: "9999px",
+        button: "8px",
+        card: "12px",
+        input: "6px",
+        pill: "10px",
+      },
+      fontFamily: {
+        // Updated to use the local Gilroy variable
+        primary: ["var(--font-gilroy)", "Arial", "Helvetica Neue", "sans-serif"],
+        sans: ["var(--font-gilroy)", "Arial", "Helvetica Neue", "sans-serif"],
+        stack: ["var(--font-gilroy)", "Arial", "Helvetica Neue", "sans-serif"],
+      },
+      fontWeight: {
+        base: "300",
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
+      },
+      fontSize: {
+        xs: ["11.62px", { lineHeight: "14px" }],
+        sm: ["14px", { lineHeight: "16.8px" }],
+        base: ["14px", { lineHeight: "16.8px" }],
+        md: ["16px", { lineHeight: "20px" }],
+        lg: ["20px", { lineHeight: "24px" }],
+        xl: ["24px", { lineHeight: "28px" }],
+        "2xl": ["32px", { lineHeight: "36px" }],
+        hero: ["70px", { lineHeight: "1" }],
+      },
+      spacing: {
+        1: "1px",
+        2: "4px",
+        3: "6px",
+        4: "8px",
+        5: "9px",
+        6: "12px",
+        7: "13px",
+        8: "16px",
+      },
+      transitionDuration: {
+        instant: "100ms",
+        fast: "150ms",
+        normal: "200ms",
+      },
+      colors: {
+        brand: {
+          primary: "#1c1e29",
+          secondary: "#0a0c14",
+          tertiary: "#2b4c8c",
+          base: "#0a0c14",
+          muted: "#fbfbfa",
+          line: "#e4e4e0",
+          subtle: "#8a8a86",
+        },
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        card: {
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
+        },
+        popover: {
+          DEFAULT: "var(--popover)",
+          foreground: "var(--popover-foreground)",
+        },
+        primary: {
+          DEFAULT: "#1c1e29",
+          foreground: "#fbfbfa",
+          hover: "#2a2d3d",
+        },
+        secondary: {
+          DEFAULT: "#0a0c14",
+          foreground: "#fbfbfa",
+        },
+        tertiary: {
+          DEFAULT: "#2b4c8c",
+          foreground: "#fbfbfa",
+          hover: "#213d70",
+        },
+        muted: {
+          DEFAULT: "#f3f3f0",
+          foreground: "#1c1e29",
+        },
+        accent: {
+          DEFAULT: "#eef1f7",
+          foreground: "#2b4c8c",
+        },
+        destructive: {
+          DEFAULT: "#b3261e",
+          foreground: "#fbfbfa",
+        },
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+      },
+    },
+  },
+  plugins: [],
+};
