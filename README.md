@@ -14,6 +14,7 @@
 
 ---
 
+
 ## 🚨 Problem Statement
 
 - **Small Artisans Lack Visibility**: Traditional craftsmen and small sellers lack digital reach and modern e-commerce tools.
@@ -184,5 +185,6 @@ Designed and developed with ❤️ for local Indian artisans and small business 
 - **Bishwanath Kumar**
 - **Ujawal Mishra**
 *Thank you for supporting LokKart and empowering local businesses!*
-#   l o k c a r t  
+#   l o k c a r t 
+ 
  
